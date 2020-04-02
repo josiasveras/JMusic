@@ -1,52 +1,72 @@
 div.wrapper {
-    position: relative;
-    border: 3px solid #2621ad;
-    height: 1000px;
+    position: absolute;
+    /*border: 3px solid #2621ad;*/
+    z-index: 152;
+    height: 100%;
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+    background-color: rgba(0,0,0,.72);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 } 
 
 div.trackInformation {
     position: relative;
-    border: 3px solid rgb(189, 33, 103);
-    height: 900px;
+    /*border: 3px solid rgba(24, 223, 63, 0.088);*/
+    height: 100%;
 } 
 
 div.trackTitle {
-    border: 3px solid rgb(192, 213, 7);
+    position: relative;
+    /*border: 3px solid rgb(192, 213, 7);*/
 } 
 
 div.trackArtist {
-    border: 3px solid rgb(15, 196, 216);
+    position: relative;
+    /*border: 3px solid rgb(15, 196, 216);*/
 } 
 
 div.nowPlayingAlbumArtContainer {
-    position: relative;
-    border: 3px solid rgb(173, 84, 33);
-    height: 800px;
+    position: absolute;
+    /*border: 3px solid rgb(173, 84, 33);*/
+    height: 100%;
+    width: 100%;
 } 
 
 div.largeAlbumArtContainer {
     position: absolute;
-    border: 3px solid rgb(10, 10, 10);
+    /*border: 3px solid rgb(10, 10, 10);*/
     height: 550px;
     width: 500px;
     top: 0;
 } 
 
 div.albumArt {
-    border: 3px solid rgb(129, 121, 211);
+    /*border: 3px solid rgb(129, 121, 211);*/
 } 
 
 div.nowPlayingLyricsContainer {
-    position: absolute;
+    position: relative;
     top: 40px;
     left: 520px;
-    border: 3px solid #73AD21;
+    /*border: 3px solid #73AD21;*/
     top: 0;
     height: 200px;
-    width: 950px;
-    overflow: scroll;
+    width: 800px;
+    
     font-family: "Lucida Console", Courier, monospace;
     font-size: 20px;
+
+    display: inline-block;
+    transition: -webkit-transform 1s ease-out;
+    transition: transform 1s ease-out;
+    transition: transform 1s ease-out,-webkit-transform 1s ease-out;
+    overflow-y: scroll;
+    white-space: normal;
 }
 
 ul {
